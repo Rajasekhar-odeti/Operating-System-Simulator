@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - ThreadSim</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Thread<span>Sim</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html" class="active">Features</a></li>
+            <li><a href="simulator.html">Simulator</a></li>
+            <li><a href="models.html">Models</a></li>
+            <li><a href="sync.html">Synchronization</a></li>
+        </ul>
+        <a href="simulator.html" class="btn btn-primary" style="padding: 0.5rem 1rem; border-radius: 99px;">Try Simulation</a>
+    </nav>
+
+    <div class="page-container">
+        <section class="features">
+            <div class="section-header">
+                <h2>Our Core <span class="gradient-text">Features</span></h2>
+                <p>Everything you need to grasp concurrent programming dynamics and system-level architecture visually.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3>Thread Lifecycle Visualization</h3>
+                    <p>Observe the transition of threads from initial creation to final termination. Watch progression as threads execute instructions and log processing time dynamically.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Real-Time State Changes</h3>
+                    <p>Watch running, waiting, and ready states shift instantly on the dashboard. Visual cues, color borders, and pulsing glows help distinguish active tasks from blocked I/O operations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>CPU Scheduling Simulation</h3>
+                    <p>Experience how the scheduler distributes processing time among active threads using context switching. Time quantums are tracked accurately against processing load.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Semaphore Synchronization</h3>
+                    <p>Understand mutual exclusion. Discover how shared resources are safely allocated utilizing locks, preventing race conditions via structured wait queues and permit tracking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-sitemap"></i></div>
+                    <h3>Thread Models Comparison</h3>
+                    <p>Compare kernel-level and user-level thread mappings, including Many-to-One, One-to-One, and Many-to-Many configurations to see performance bottlenecks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Live System Tracking</h3>
+                    <p>Monitor high-level system statistics seamlessly, including total threads allocated, CPU utilization bounds, and quantum timing loops without server side rendering.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Thread<span>Sim</span></div>
+                    <p>Interactive educational tool for computer science concepts</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                    <a href="#"><i class="fas fa-info-circle"></i> Documentation</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 ThreadSim | Built by Pranay
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

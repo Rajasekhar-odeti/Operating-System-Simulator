@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models - ThreadSim</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Thread<span>Sim</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="simulator.html">Simulator</a></li>
+            <li><a href="models.html" class="active">Models</a></li>
+            <li><a href="sync.html">Synchronization</a></li>
+        </ul>
+        <a href="simulator.html" class="btn btn-primary" style="padding: 0.5rem 1rem; border-radius: 99px;">Try Simulation</a>
+    </nav>
+
+    <div class="page-container">
+        <section class="models-section">
+            <div class="section-header">
+                <h2>Thread <span class="gradient-text">Models</span></h2>
+                <p>Understand how abstractions layer across User space and Kernel system architecture.</p>
+            </div>
+            <div class="models-grid">
+                <div class="model-card">
+                    <h3>Many-to-One</h3>
+                    <p>Maps many user-level threads to one kernel thread. Thread management is done by the thread library in user space, making it efficient, but the entire process will block if a thread makes a blocking system call.</p>
+                    <div class="model-diagram">
+                        <div class="user-space">
+                            <div class="t-circle">U1</div>
+                            <div class="t-circle">U2</div>
+                            <div class="t-circle">U3</div>
+                        </div>
+                        <i class="fas fa-arrow-down model-arrow"></i>
+                        <div class="kernel-space">
+                            <div class="k-circle">K1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <h3>One-to-One</h3>
+                    <p>Maps each user thread to an individual kernel thread. Provides more concurrency by allowing another thread to run when a thread blocks. Fully harnesses parallel architectures.</p>
+                    <div class="model-diagram">
+                        <div class="user-space">
+                            <div class="t-circle">U1</div>
+                            <div class="t-circle">U2</div>
+                            <div class="t-circle">U3</div>
+                        </div>
+                        <div class="multi-arrows">
+                            <i class="fas fa-long-arrow-alt-down model-arrow"></i>
+                            <i class="fas fa-long-arrow-alt-down model-arrow"></i>
+                            <i class="fas fa-long-arrow-alt-down model-arrow"></i>
+                        </div>
+                        <div class="kernel-space multi">
+                            <div class="k-circle">K1</div>
+                            <div class="k-circle">K2</div>
+                            <div class="k-circle">K3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <h3>Many-to-Many</h3>
+                    <p>Multiplexes many user-level threads to a smaller or equal number of kernel threads. Allows creating as many limits as necessary without bottlenecking true core capabilities.</p>
+                    <div class="model-diagram">
+                        <div class="user-space">
+                            <div class="t-circle">U1</div>
+                            <div class="t-circle">U2</div>
+                            <div class="t-circle">U3</div>
+                            <div class="t-circle">U4</div>
+                        </div>
+                        <i class="fas fa-random mx-arrow"></i>
+                        <div class="kernel-space multi">
+                            <div class="k-circle">K1</div>
+                            <div class="k-circle">K2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Thread<span>Sim</span></div>
+                    <p>Interactive educational tool for computer science concepts</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                    <a href="#"><i class="fas fa-info-circle"></i> Documentation</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 ThreadSim | Built by Pranay
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

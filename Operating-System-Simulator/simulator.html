@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator - ThreadSim</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Thread<span>Sim</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="simulator.html" class="active">Simulator</a></li>
+            <li><a href="models.html">Models</a></li>
+            <li><a href="sync.html">Synchronization</a></li>
+        </ul>
+        <a href="simulator.html" class="btn btn-primary" style="padding: 0.5rem 1rem; border-radius: 99px;">Try Simulation</a>
+    </nav>
+
+    <div class="page-container">
+        <section class="simulator-section">
+            <div class="section-header" style="margin-bottom: 2rem;">
+                <h2>Simulator <span class="gradient-text">Dashboard</span></h2>
+                <p>Spawn threads, manage compute boundaries, and control the CPU cycle dynamically.</p>
+            </div>
+            
+            <div class="dashboard">
+                <div class="dashboard-controls">
+                    <div>
+                        <h3>Controls Matrix</h3>
+                        <div class="buttons">
+                            <button id="btn-create" class="btn-action primary"><i class="fas fa-plus"></i> Instantiate Thread</button>
+                            <button id="btn-start" class="btn-action success"><i class="fas fa-play"></i> Initialize CPU</button>
+                            <button id="btn-stop" class="btn-action warning" disabled><i class="fas fa-pause"></i> Interrupt CPU</button>
+                            <button id="btn-reset" class="btn-action danger"><i class="fas fa-redo"></i> System Reboot</button>
+                        </div>
+                    </div>
+                    
+                    <div class="system-stats">
+                        <h3>Telemetry</h3>
+                        <div class="stat-row">
+                            <span>Mainframe:</span>
+                            <span id="stat-cpu" class="status-badge inactive">Idle</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Process Count:</span>
+                            <span id="stat-threads">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Time Quantums:</span>
+                            <span id="stat-time">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="legend">
+                        <h3>State Legend</h3>
+                        <div class="legend-item"><span class="color-box running"></span> Running (CPU bound)</div>
+                        <div class="legend-item"><span class="color-box ready"></span> Ready (Queue)</div>
+                        <div class="legend-item"><span class="color-box waiting"></span> Waiting (I/O block)</div>
+                        <div class="legend-item"><span class="color-box terminated"></span> Terminated (Closed)</div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-visualizer">
+                    <div class="visualizer-header">
+                        <h3>Resource Pool Allocation</h3>
+                        <div class="cpu-indicator"><i class="fas fa-microchip"></i> Core-0</div>
+                    </div>
+                    <div id="thread-container" class="thread-container">
+                        <div class="empty-state">System Idle. Select 'Instantiate Thread' to populate pool.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Thread<span>Sim</span></div>
+                    <p>Interactive educational tool for computer science concepts</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                    <a href="#"><i class="fas fa-info-circle"></i> Documentation</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 ThreadSim | Built by Pranay
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
