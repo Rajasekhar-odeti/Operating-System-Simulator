@@ -1,67 +1,88 @@
 # 🖥️ Operating System Simulator — ThreadSim
 
-An interactive web-based **Operating System Simulator** that visually demonstrates important Operating System concepts such as **thread lifecycle, CPU scheduling, thread models, and semaphore synchronization**.
+An interactive web-based **Operating System Simulator** designed to visualize important Operating System concepts through an intuitive and interactive interface.
+
+The project demonstrates **thread lifecycle, CPU scheduling, thread models, context switching, and semaphore synchronization** using HTML, CSS, and JavaScript.
+
+## 🌐 Live Demo
+
+🔗 **[View Live Demo](https://rajasekhar-odeti.github.io/Operating-System-Simulator/)**
 
 ## 🚀 Features
 
-### 🔄 Thread Lifecycle Visualization
+### 🧵 Thread Lifecycle
 
 - Create and manage multiple threads
-- Visualize different thread states:
-  - Ready
-  - Running
-  - Waiting
-  - Terminated
-- Track thread execution progress
-- Display processing time dynamically
+- Visualize thread states
+- Ready, Running, Waiting, and Terminated states
+- Track thread execution
+- Monitor thread progress
 
-### ⚡ CPU Scheduling Simulation
+### ⚡ CPU Scheduling
 
-- Start and stop CPU execution
-- Simulate CPU context switching
-- Demonstrates Round Robin-style preemptive scheduling
-- Tracks time quantums during execution
-- Displays CPU status and active thread count
-- Simulates I/O operations by moving threads into a waiting state
+- Interactive CPU execution simulation
+- Context switching visualization
+- Round Robin-style scheduling
+- Time quantum tracking
+- CPU status monitoring
+- Simulated I/O waiting
 
 ### 🔐 Semaphore Synchronization
 
-- Interactive semaphore simulation
-- Demonstrates resource acquisition and release
-- Visualizes the Critical Section
-- Maintains a waiting queue when resources are unavailable
-- Displays available semaphore permits
-- Demonstrates mutual exclusion and resource synchronization
+- Semaphore resource management
+- Critical section visualization
+- Resource acquisition and release
+- Waiting queue simulation
+- Semaphore permit tracking
+- Mutual exclusion demonstration
 
-### 🧵 Thread Models
+### 🧩 Thread Models
 
-The simulator visually demonstrates three important thread mapping models:
+The project demonstrates three important thread mapping models:
 
 - Many-to-One
 - One-to-One
 - Many-to-Many
 
-These models demonstrate the relationship between user-level threads and kernel-level threads.
+These visualizations help understand the relationship between user-level threads and kernel-level threads.
 
-### 📊 Live System Tracking
+### 📊 Real-Time Monitoring
 
-The simulator provides real-time information including:
+The simulator displays:
 
 - CPU status
 - Thread count
+- Thread states
+- Execution progress
 - Time quantums
-- Thread execution progress
-- Current thread states
 - Semaphore permits
 - Waiting threads
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![Home Page](screenshots/home.png)
+
+### ⚡ Thread & CPU Simulator
+
+![Thread and CPU Simulator](screenshots/simulator.png)
+
+### 🧩 Thread Models
+
+![Thread Models](screenshots/models.png)
+
+### 🔐 Semaphore Synchronization
+
+![Semaphore Synchronization](screenshots/synchronization.png)
+
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome
-- Google Fonts (Inter)
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Font Awesome**
+- **Google Fonts**
 
 ## 📂 Project Structure
 
@@ -73,21 +94,18 @@ The simulator provides real-time information including:
     ├── models.html
     ├── sync.html
     ├── script.js
-    └── style.css
-
-| File | Description |
-|------|-------------|
-| `index.html` | Main landing page |
-| `features.html` | Displays simulator features |
-| `simulator.html` | Thread lifecycle and CPU scheduling simulator |
-| `models.html` | Thread model visualization |
-| `sync.html` | Semaphore synchronization simulation |
-| `script.js` | Core JavaScript simulation logic |
-| `style.css` | Website styling and animations |
+    ├── style.css
+    ├── README.md
+    │
+    └── screenshots/
+        ├── home.png
+        ├── simulator.png
+        ├── models.png
+        └── synchronization.png
 
 ## 🎯 Operating System Concepts
 
-This project demonstrates practical concepts including:
+This project provides an interactive visualization of:
 
 - Threads
 - Thread Lifecycle
@@ -108,19 +126,17 @@ This project demonstrates practical concepts including:
 - Wait Queues
 - Resource Synchronization
 
-## ▶️ How to Run
+## ▶️ How to Run Locally
 
-No backend or database is required because this is a client-side web application.
+### Clone the Repository
 
-### 1. Clone the Repository
+    git clone https://github.com/rajasekhar-odeti/Operating-System-Simulator.git
 
-    git clone https://github.com/Rajasekhar-odeti/Operating-System-Simulator.git
-
-### 2. Navigate to the Project
+### Navigate to the Project
 
     cd Operating-System-Simulator
 
-### 3. Run the Application
+### Run the Project
 
 Open `index.html` in a modern web browser.
 
@@ -128,17 +144,9 @@ You can also use **VS Code Live Server** to run the project locally.
 
 ## 💡 Project Objective
 
-The objective of this project is to make Operating System concepts easier to understand through **interactive visual simulations**.
+The goal of ThreadSim is to make Operating System concepts easier to understand through **interactive visual simulations** rather than only theoretical explanations.
 
-Users can interact with the simulator and observe:
-
-- Thread state transitions
-- CPU execution
-- Context switching
-- Scheduling behavior
-- Thread models
-- Semaphore operations
-- Critical-section synchronization
+Users can interact with the simulator and observe thread execution, CPU scheduling, context switching, thread models, and synchronization mechanisms.
 
 ## 🔮 Future Enhancements
 
@@ -154,21 +162,6 @@ Users can interact with the simulator and observe:
 - Page Replacement Algorithms
 - Disk Scheduling Algorithms
 - Scheduling Performance Metrics
-
-## 📸 Screenshots
-
-Add project screenshots here to showcase the simulator interface.
-
-    screenshots/
-    ├── home.png
-    ├── simulator.png
-    ├── models.png
-    └── synchronization.png
-
-## 🌐 Live Demo
-
-**Live Demo:**  
-https://rajasekhar-odeti.github.io/Operating-System-Simulator/index.html
 
 ## 👨‍💻 Author
 
