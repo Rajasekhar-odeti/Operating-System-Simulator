@@ -114,7 +114,7 @@ No backend or database is required because this is a client-side web application
 
 ### 1. Clone the Repository
 
-    git clone https://github.com/YOUR-USERNAME/Operating-System-Simulator.git
+    git clone https://github.com/Rajasekhar-odeti/Operating-System-Simulator.git
 
 ### 2. Navigate to the Project
 
@@ -168,7 +168,7 @@ Add project screenshots here to showcase the simulator interface.
 ## 🌐 Live Demo
 
 **Live Demo:**  
-https://YOUR-USERNAME.github.io/Operating-System-Simulator/
+https://github.com/Rajasekhar-odeti/Operating-System-Simulator/
 
 ## 👨‍💻 Author
 
