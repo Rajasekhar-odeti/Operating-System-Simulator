@@ -168,7 +168,7 @@ Add project screenshots here to showcase the simulator interface.
 ## 🌐 Live Demo
 
 **Live Demo:**  
-https://github.com/Rajasekhar-odeti/Operating-System-Simulator/
+https://rajasekhar-odeti.github.io/Operating-System-Simulator/index.html
 
 ## 👨‍💻 Author
 
